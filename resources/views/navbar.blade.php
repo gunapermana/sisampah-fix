@@ -17,16 +17,16 @@
           <a class="nav-link active" aria-current="page" href="/about">ABOUT</a>
         </li>
         <li class="nav-item menu-nav px-2">
-          <a class="nav-link active" aria-current="page" href="/poin">POIN</a>
-        </li>
-        <li class="nav-item menu-nav px-2">
           <a class="nav-link active" aria-current="page" href="/contact">CONTACT</a>
         </li>
         <li class="nav-item menu-nav px-2">
           <a class="nav-link active" aria-current="page" href="/news">NEWS</a>
         </li>
         <li class="nav-item menu-nav px-2">
-          <a class="nav-link active" aria-current="page" href="#">LOGIN</a>
+          <a class="nav-link active" aria-current="page" href="/poin">POIN</a>
+        </li>
+        <li class="nav-item menu-nav px-2">
+          <a class="nav-link active text-success" aria-current="page" href="#">LOGIN</a>
         </li>
       </ul>
     </div>
