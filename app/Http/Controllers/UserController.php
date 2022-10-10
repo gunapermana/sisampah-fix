@@ -43,10 +43,23 @@ class UserController extends Controller
     }
 
     // For Login
-
+    public function login()
+    {
+    }
+    public function actionlogin()
+    {
+    }
 
     // For Register
-
+    public function register()
+    {
+    }
+    public function actionregister()
+    {
+    }
 
     // For Logout
+    public function logout()
+    {
+    }
 }
