@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PoinController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +18,4 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
-
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/poin', [PoinController::class, 'index'])->name('user.poin');
