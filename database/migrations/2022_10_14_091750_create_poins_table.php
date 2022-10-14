@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->unsignedBigInteger('roles_id')->required()->after('address');
-            $table->foreign('roles_id')->references('id')->on('roles');
+        Schema::create('poins', function (Blueprint $table) {
+            $table->id();
+            $table->bigInteger('poin');
+            $table->timestamps();
         });
     }
 
@@ -26,9 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropForeign(['roles_id']);
-            $table->dropColumn('roles_id');
-        });
+        Schema::dropIfExists('poins');
     }
 };
